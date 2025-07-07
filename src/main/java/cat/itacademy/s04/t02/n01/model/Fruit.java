@@ -1,13 +1,9 @@
 package cat.itacademy.s04.t02.n01.model;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-public class Fruit {
+@Document(collection = "fruits")public class Fruit {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private int weightKg;

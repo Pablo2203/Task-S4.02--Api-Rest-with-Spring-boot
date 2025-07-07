@@ -22,12 +22,12 @@ public class FruitController {
     }
 
     @DeleteMapping("/delete")
-    public void deleteFruit (@RequestBody int id){
+    public void deleteFruit (@RequestBody String id){
         fruitService.deleteFruit(id);
     }
 
     @GetMapping("/getOne")
-    public Fruit getOneFruit (@RequestBody int id){
+    public Fruit getOneFruit (@RequestBody String id){
         return fruitService.getOneFruit(id);
     }
 
