@@ -2,7 +2,8 @@ package cat.itacademy.s04.t02.n01.model;
 import jakarta.persistence.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "fruits")public class Fruit {
+@Document(collection = "fruits")
+public class Fruit {
     @Id
     private int id;
     private String name;
