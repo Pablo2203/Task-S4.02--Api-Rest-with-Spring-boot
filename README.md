@@ -12,7 +12,7 @@ The project will adhere to **HTTP best practices** for API design, properly hand
 
 ## 💻 Technologies Used
 
-- **Java 11+** 
+- **Java 21+** 
 - **Spring Boot** (latest stable version)
   - Spring Web
   - Spring Data JPA
@@ -29,7 +29,7 @@ The project will adhere to **HTTP best practices** for API design, properly hand
 
 Ensure the following tools are installed in your environment:
 
-- **JDK 11 or higher**
+- **JDK 21 or higher**
 - **Maven** or **Gradle**
 - **MySQL** installed locally or cloud-configured
 - **MongoDB** installed locally (default port: `27017`) or cloud-configured
