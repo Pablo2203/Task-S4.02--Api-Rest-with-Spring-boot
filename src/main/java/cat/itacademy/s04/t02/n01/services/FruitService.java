@@ -16,12 +16,12 @@ public class FruitService {
    public Fruit updateFruit (Fruit fruit){
         return fruitRepository.save(fruit);
     }
-    public void deleteFruit (int id){
+    public void deleteFruit (String id){
 
         fruitRepository.deleteById(id);
     }
-    public Fruit getOneFruit (int id){
-        return fruitRepository.getById(id);
+    public Fruit getOneFruit (String id){
+        return fruitRepository.findById(id).orElse(null);
     }
     public Iterable<Fruit> getAllFruit (){
         return fruitRepository.findAll();
