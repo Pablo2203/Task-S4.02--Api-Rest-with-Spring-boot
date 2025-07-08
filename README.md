@@ -6,7 +6,7 @@ This project consists of implementing a **CRUD (Create, Read, Update, Delete)** 
 
 1. **Level 1:** CRUD with **H2** (in-memory database)
 2. **Level 2:** CRUD with **MySQL**
-3. **Level 3:** CRUD with **MongoDB**
+3. **Level 3:** CRUD with **MongoDB**   **(Please check branch feat/mongodb)**
 
 The project will adhere to **HTTP best practices** for API design, properly handling HTTP verbs and status codes. Additionally, it includes a **GlobalExceptionHandler** for centralized error handling to improve robustness.
 
