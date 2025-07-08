@@ -22,12 +22,12 @@ public class FruitController {
     }
 
     @DeleteMapping("/delete")
-    public void deleteFruit (@RequestBody String id){
+    public void deleteFruit (@PathVariable String id){
         fruitService.deleteFruit(id);
     }
 
     @GetMapping("/getOne")
-    public Fruit getOneFruit (@RequestBody String id){
+    public Fruit getOneFruit (@PathVariable String id){
         return fruitService.getOneFruit(id);
     }
 
@@ -37,9 +37,9 @@ public class FruitController {
     }
 
 
-   /* http://localhost:8080/fruta/add
+   /* http://localhost:8080/fruit/add
     http://localhost:8080/fruit/update
-    http://localhost:8080/fruta/delete/{id}
-    http://localhost:8080/fruta/getOne/{id}
+    http://localhost:8080/fruit/delete/{id}
+    http://localhost:8080/fruit/getOne/{id}
     http://localhost:8080/fruit/getAll*/
 }

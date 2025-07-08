@@ -1,9 +1,9 @@
 package cat.itacademy.s04.t02.n01.repository;
 
 import cat.itacademy.s04.t02.n01.model.Fruit;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FruitRepository extends JpaRepository<Fruit, String> {
+public interface FruitRepository extends MongoRepository<Fruit, String> {
 }

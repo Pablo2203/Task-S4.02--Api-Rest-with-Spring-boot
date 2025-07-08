@@ -1,25 +1,17 @@
 package cat.itacademy.s04.t02.n01.model;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "fruits")
 public class Fruit {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private String id;
     private String name;
     private int weightKg;
 
     public Fruit() {}
 
-    public Fruit(String name, int weightKg) {
-        this.name = name;
-        this.weightKg = weightKg;
-    }
-
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -31,7 +23,7 @@ public class Fruit {
         return weightKg;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -42,4 +34,10 @@ public class Fruit {
     public void setWeightKg(int weightKg) {
         this.weightKg = weightKg;
     }
+
+    public Fruit(String name, int weightKg) {
+        this.name = name;
+        this.weightKg = weightKg;
+    }
+
 }
